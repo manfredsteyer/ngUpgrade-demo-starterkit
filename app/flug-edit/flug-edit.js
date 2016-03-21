@@ -1,4 +1,6 @@
-System.register([], function(exports_1) {
+System.register([], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var FlugEdit;
     return {
         setters:[],
@@ -31,7 +33,7 @@ System.register([], function(exports_1) {
                     });
                 };
                 return FlugEdit;
-            })();
+            }());
             exports_1("FlugEdit", FlugEdit);
         }
     }

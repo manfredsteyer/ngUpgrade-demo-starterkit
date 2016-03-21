@@ -6,7 +6,7 @@ import { FlugService } from './services/flug-service';
 import * as angular from 'angular';
 import { OrtFilter } from './ort-filter';
 import './flug-service';
-import {Home} from './home/home';
+import './home/home';
 import {FlugSuchen} from './flug-suchen/flug-suchen';
 import {FlugEdit} from './flug-edit/flug-edit';
 import { OrtValidatorFactory } from './components/validation/ort';
@@ -72,7 +72,7 @@ app.directive('gdate', GDateValidatorFactory.create);
 app.directive('passagierCard', PassagierCardFactory.create);
 app.service('passagierService', PassagierService);
 
-app.controller('home', Home);
+// app.controller('home', Home);
 app.controller('flugSuchen', FlugSuchen);
 app.controller('flugEdit', FlugEdit);
 app.filter('ort', OrtFilter.createFilter)

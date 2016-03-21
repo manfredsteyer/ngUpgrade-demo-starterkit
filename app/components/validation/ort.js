@@ -1,4 +1,6 @@
-System.register([], function(exports_1) {
+System.register([], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var OrtValidatorFactory;
     return {
         setters:[],
@@ -26,7 +28,7 @@ System.register([], function(exports_1) {
                     };
                 };
                 return OrtValidatorFactory;
-            })();
+            }());
             exports_1("OrtValidatorFactory", OrtValidatorFactory);
         }
     }

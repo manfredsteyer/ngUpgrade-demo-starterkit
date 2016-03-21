@@ -1,4 +1,6 @@
-System.register([], function(exports_1) {
+System.register([], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var FlugSuchen;
     return {
         setters:[],
@@ -27,7 +29,7 @@ System.register([], function(exports_1) {
                     this.warenkorbService.flug = flug;
                 };
                 return FlugSuchen;
-            })();
+            }());
             exports_1("FlugSuchen", FlugSuchen);
         }
     }

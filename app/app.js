@@ -1,17 +1,17 @@
 //
 // AngularJS 1.x-Imports
 //
-System.register(['./ort-filter', './flug-service', './home/home', './flug-suchen/flug-suchen', './flug-edit/flug-edit', './components/validation/ort', './components/validation/async-ort', './components/validation/gdate', './app-module', './passagier-card/passagier-card', './services/passagier-service', './upgrade-adapter'], function(exports_1) {
-    var ort_filter_1, home_1, flug_suchen_1, flug_edit_1, ort_1, async_ort_1, gdate_1, app_module_1, passagier_card_1, passagier_service_1, upgrade_adapter_1;
+System.register(['./ort-filter', './flug-service', './home/home', './flug-suchen/flug-suchen', './flug-edit/flug-edit', './components/validation/ort', './components/validation/async-ort', './components/validation/gdate', './app-module', './passagier-card/passagier-card', './services/passagier-service', './upgrade-adapter'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
+    var ort_filter_1, flug_suchen_1, flug_edit_1, ort_1, async_ort_1, gdate_1, app_module_1, passagier_card_1, passagier_service_1, upgrade_adapter_1;
     return {
         setters:[
             function (ort_filter_1_1) {
                 ort_filter_1 = ort_filter_1_1;
             },
             function (_1) {},
-            function (home_1_1) {
-                home_1 = home_1_1;
-            },
+            function (_2) {},
             function (flug_suchen_1_1) {
                 flug_suchen_1 = flug_suchen_1_1;
             },
@@ -77,7 +77,7 @@ System.register(['./ort-filter', './flug-service', './home/home', './flug-suchen
             app_module_1.app.directive('gdate', gdate_1.GDateValidatorFactory.create);
             app_module_1.app.directive('passagierCard', passagier_card_1.PassagierCardFactory.create);
             app_module_1.app.service('passagierService', passagier_service_1.PassagierService);
-            app_module_1.app.controller('home', home_1.Home);
+            // app.controller('home', Home);
             app_module_1.app.controller('flugSuchen', flug_suchen_1.FlugSuchen);
             app_module_1.app.controller('flugEdit', flug_edit_1.FlugEdit);
             app_module_1.app.filter('ort', ort_filter_1.OrtFilter.createFilter);
