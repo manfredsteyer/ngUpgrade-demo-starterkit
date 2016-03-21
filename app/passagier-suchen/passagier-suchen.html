@@ -1,0 +1,18 @@
+<h1>Passagier suchen (2)</h1>
+
+<div class="form-group">
+	<label>Name</label>
+	<input [(ngModel)]="name" class="form-control">
+</div>
+<div>
+	<input type="button" value="Suchen!" (click)="search()" class="btn">
+</div>
+
+<table class="table table-striped">
+    <tr *ngFor="#p of passagiere">
+        <td>{{p.id}}</td>
+        <td>{{p.vorname}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.passagierStatus}}</td>
+    </tr>
+</table>
